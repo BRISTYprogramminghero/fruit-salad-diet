@@ -142,23 +142,39 @@
 }
 
 @media only screen and (max-width: 770px) {
+        html{
+        overflow: hidden;
+    }
+       body {
+        overflow-x: hidden;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+      }
+      .hidden-thing {
+        position: fixed;
+        left: 100%;
+        width: 20px; 
+        height: 50px;
+        opacity: 0;
+      }
     .main{
         width: 100%;
         height: 100vh;
 
     }
     .left-col{
-        flex-basis: 70%;
+        flex-basis: 50% !important;
         
         
     }
     .right-col{
-        flex-basis: 30%;
+        flex-basis: 50% !important;
     }
     .content-box{
-        width: 100px;
+        width: 50px;
         top: 80px;
-        left: 50px;
+        left: 10px;
     }
 
     .main-img{
@@ -169,13 +185,15 @@
         
     }     
     .content-box h1{
-        font-size: 38px;
+        font-size: 30px;
         margin: 15px 0 30px;
+        display: inline;
     }
     .content-box p{
         font-size: 12px;
         line-height: 12px;
         margin-bottom: 50px;
+        display: inline;
     }
     .content-box button{
         padding: 10px 20px;
@@ -187,85 +205,139 @@
         height: 5px;
     }
     .search-box{
-        margin: 20px;
+        margin: 50px;
         margin-left: 50px;
         padding: 5px;
+        display: flex;
     }
     .more-items img{
-        width: 190px;
+        margin: 70px;
+        width: 130px;
+        padding-left: 50px;
+        display: block;
         
+    }
+    .btn{
+        width: 70px;
+        margin-top: 5px;
+        height: 30px !important;
+        font-size: 9px;
     }
 }
 
-/* @media only screen and (max-width: 600px) {
-    .main{
-        width: 100%;
-        height: 100vh;
-        display: flex;
+@media only screen and (max-width: 600px) {
+    html{
         overflow: hidden;
     }
+       body {
+        overflow-x: hidden;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+      }
+      .hidden-thing {
+        position: fixed;
+        left: 100%;
+        width: 20px; 
+        height: 50px;
+        opacity: 0;
+      }
+      .left-col{
+        flex-basis: 50% !important;
+        
+        
+    }
+    .right-col{
+        flex-basis: 50% !important;
+    }
+      .logo{
+          width: 30px;
+      }
+      .rating{
+          width: 50px;
+      }
     .main-img{
-        height: 300px;
-        width: 280px;
+        height: 150px;
+        width: 150px;
         position: block;
         top: 50%;
         left: 52%;
-        transform: translate(-53%,-50%);
     } 
     .content-box{
-        width: 80px;
+        width: 50px;
         position: absolute;
         top: 80px;
         left: 40px;
     }
     .content-box h1{
-        font-size: 22px;
+        font-size: 18px;
         margin: 20px 0 25px;
     }
+    .content-box p{
+        font-size: 7px;
+        margin: 0;
+    }
     .search-box{
-        margin: 2px;
-        display: inline;
-        margin-left: 50px;
-        padding: 5px;
+        margin: 1px !important;
+        display: inline-block;
+        margin-left: 10px !important;
         padding-right: 5px;
-        width: 60%;
+        padding-left: 20px;
+        width: 90%;
+        font-size: 5px !important;
+    }
+    .search-box img{
+        display: none;
+    }
+    .left-arrow{
+        width: 30px;
+    }
+    .right-arrow{
+        width: 30px;
+    }
+    .navbar ul li{
+        margin-left: 20px;
+        
     }
     .pic{ 
-    display: none;
-    padding-right: 100px;
+    display: inline-block;
+    padding-right: 1px;
+    width: 15px !important;
+    height: 15px !important;
     }
     .navbar ul li a{
         text-decoration: none;
-        font-size: 12px;
+        font-size: 5px;
         display: block;
+        gap: 0;
         align-items: left;
         padding-right: 5px;
     }
+     .navbar ul li a img{
+        width: 5px;
+        height: 5px;
+
+     }
     .right-col{
         padding-left: 1px;
         height: 100vh;
-        width: 100%;
+        width: 50%;
         display: block;
         line-height: 0;
     }
     .more-items img{
-        margin: 110px;
-        width: 135px;
-        padding-left: 10px;
+        margin: 70px;
+        width: 80px;
+        padding-left: 130px;
         display: block;
-        line-height: 0;
-        
-        
     }
-    .content-box button{
-        display: flex;
-        outline: none;
-        margin-top: 150px;
-        padding: 10px 20px;
-        cursor: pointer;
-        height: 40px;
+    .btn{
+        width: 70px;
+        height: 30px !important;
+        font-size: 9px;
     }
-} */
+
+}
 
 
 
